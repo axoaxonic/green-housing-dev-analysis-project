@@ -1,6 +1,8 @@
 ![Our Stakeholder, Dwell Development](images/Dwell.png)
 
 
+
+
 # Dwell Development 
 
 **Authors**: Stefano Caruso, Holly Gultiano, Raul Torres
@@ -17,17 +19,21 @@ Our housing data csv is located in the data folder on this repository. It is a c
 
 For our analysis, we used the "price" variable as the main target for our analysis.
 
+This map shows the where the 30 most prominent tech companies are in Seattle. 
+![Tech company zip code map](./images/techcompany_map.png)
+
 
 ## Modeling
-we ran model for the optimal price prediction. 
 
-
+To look for what features in our dataset correlate the most with house pricing in the zip codes associated with local tech companies, we ran a few simple (one variable) linear regression models using Ordinary Least Squares, in order to find the best-fit features, then we created a multiple linear regression model with house price as our target and all the best-fit feature variables (see above) as our source. We chose these features because they showed the highest correlation to house price, showing the optimal choices based on statistical measures such as R² and the Durbin-Watson test.
 
 
 ## Regression Results
 
-We used variables with the 
+Our best fit model is better than the baseline model. The reason for this is because the R² result for the first one is 0.450, compared to our best fit model with an R² of 0.704. As well, the Durbin-Watson (1.958, with 2 being the ideal) is more positively correlated in our best fit model than the baseline model (Durbin-Watson 2.024). We found that the three variables with the highest correlation to sale price were True Ft squared, Construction Grade and Bedrooms.
 
+If this model were to be put to use, Dwell Development will see an increase in business because they are not going to have to use reasources in areas that they don't need
+![Scatter plot final linear regression model](./images/scatter4.png)
 
 
 ## Conclusion
@@ -37,19 +43,16 @@ One limitation to our model was the fairly significant multicolinearity of some 
 
 Another factor to consider was the age of the data available. The data available to us went up to the year 2015. House prices have fluctuated a lot in the past few years, especially due to the pandemic's effects on the economy. For future analysis, we would like to mine recent and relevant data and explore trends in pricing over time.
 
-
-## For more infomation
-
+![Bar Plot near 30 tech companies](./images/barplot5.png)
 
 
 ## Repository Structure
 
 ```
-├── Data                               <- Collection of provided data
-├── development-notebooks              <- Narrative documentation of analysis in Jupyter notebook
-├── images                             <- PDF version of project presentation
-├── .gitignore                         <- Zipped data used in our analysis
-├── 1book.ipynb                        <- Zipped data used in our analysis
-├── README.md                          <- README for reviewers of this project
-└── green-housing-dev-analysis.ipynb   <- Working Jupyter Notebooks containing drafts of our data exploration and analysis
+├── Data                               <- Collection of provided data.
+├── development-notebooks              <- Narrative documentation of analysis in Jupyter notebook.
+├── images                             <- Images used in PDF and README.
+├── .gitignore                         <- Rules to ignore by Github.
+├── README.md                          <- This file.
+└── green-housing-dev-analysis.ipynb   <- Jupyter Notebook containing exploration and analysis of our data.
 ```
