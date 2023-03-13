@@ -9,7 +9,7 @@
 
 ## Overview
 
-We are analising King County data in order to provide a succesful business plan for Dwell Development. Dwell Development is an award-winning sustainable home builder in Seattle focusing on modern, energy efficient, net zero ready homes. Dwell Development is not a realstate company so they are going to use our work in order to analyse the best place to build for young families moving into the cities that want to work near prominent technology companies. The work is going to consist of using multiple linear regression modeling to analyze house sales. We are also going to compare different variables in order to find the strongest correlation.  
+We are analising King County data in order to provide a succesful business plan for Dwell Development. Dwell Development is an award-winning sustainable home builder in Seattle focusing on modern, energy efficient, net zero ready homes. Dwell Development is not a real estate company so they are going to use our work in order to analyse the best place to build for young families moving into the cities that want to work near prominent technology companies. The work is going to consist of using multiple linear regression modeling to analyze house sales. We are also going to compare different variables in order to find the strongest correlation.  
 
 ## Business and Data Understanding
 
